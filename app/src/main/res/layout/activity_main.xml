@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv1"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/b1"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="conectar"
+        android:text="Conectar" />
+        
+    <Button
+        android:id="@+id/b2"        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="desconectar"
+        android:text="Desconectar" />
+            
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/hello_world" />
+
+</LinearLayout>
