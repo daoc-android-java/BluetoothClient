@@ -64,7 +64,7 @@ public class MainActivity extends Activity implements Camera.PreviewCallback {
         try {
             cam = Camera.open();    
             List<Size> prevSizes = cam.getParameters().getSupportedPreviewSizes();
-            Size size = prevSizes.get(prevSizes.size() - 1);//el �ltimo es el m�s peque�o
+            Size size = prevSizes.get(prevSizes.size() - 1);//el último es el más pequeño
             Parameters param = cam.getParameters();
             param.setPreviewSize(size.width, size.height);
             cam.setParameters(param);
@@ -83,7 +83,6 @@ public class MainActivity extends Activity implements Camera.PreviewCallback {
 	
 	@Override
 	protected void onStop() {
-		// TODO Auto-generated method stub
 		super.onStop();
     	desconectar(null);
         if (cam != null) {
